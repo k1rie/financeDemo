@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CeMoney</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="CeMoney Logo">
+                </div>
+                <button class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h3>Welcome!</h3>
+                    <p>Early Access User</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-book-open"></i> Learn</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-chart-pie"></i> Invest</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-piggy-bank"></i> Save</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Exit Preview</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-actions">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <div class="user-dropdown">
+                        <button class="dropdown-toggle">
+                            <div class="avatar-small">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>Account</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="dashboard-welcome">
+                    <h1>Dashboard Preview</h1>
+                    <p>This is a non-functional preview of what your CeMoney dashboard will look like.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Portfolio Value</h3>
+                            <p class="stat-value">$1,250.00</p>
+                            <p class="stat-change positive">+2.5% <span>this week</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Total Return</h3>
+                            <p class="stat-value">$125.75</p>
+                            <p class="stat-change positive">+11.2% <span>all time</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Savings Goal</h3>
+                            <p class="stat-value">$350.00 / $1,000.00</p>
+                            <p class="stat-change neutral">35% <span>of target</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Learning Progress</h3>
+                            <p class="stat-value">Module 2/5</p>
+                            <p class="stat-change neutral">40% <span>completed</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-section">
+                    <div class="section-header">
+                        <h2>Your Investments</h2>
+                        <button class="btn-secondary-small mock-btn">Add Investment</button>
+                    </div>
+                    <div class="portfolio-chart">
+                        <div class="chart-placeholder">
+                            <div class="placeholder-bar" style="height: 60%;"></div>
+                            <div class="placeholder-bar" style="height: 45%;"></div>
+                            <div class="placeholder-bar" style="height: 75%;"></div>
+                            <div class="placeholder-bar" style="height: 80%;"></div>

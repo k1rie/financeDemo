@@ -1,0 +1,181 @@
+/* Sign-up Page Styles */
+.signup-section {
+    padding: 60px 0;
+    background-color: var(--light-color);
+}
+
+.signup-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.signup-info {
+    flex: 1;
+    padding: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.signup-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.signup-info p {
+    font-size: 1.1rem;
+}
+
+.benefits-list {
+    margin-top: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.signup-form {
+    flex: 1;
+    padding: 60px;
+}
+
+.signup-form h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.terms {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.terms a {
+    color: var(--primary-color);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.success-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles for Sign-up */
+@media (max-width: 991px) {
+    .signup-container {
+        flex-direction: column;
+    }
+    
+    .signup-info, .signup-form {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-info, .signup-form {
+        padding: 30px;
+    }
+    
+    .signup-info h1 {
+        font-size: 2rem;
+    }
+}
